@@ -23,6 +23,8 @@ var rabbitQueue = flag.String("rabbit_queue", "asterisk_ari", "rabbitmq queue na
 var messages = make(chan []byte, 1024000)
 
 func main() {
+	flag.Parse()
+	log.SetFlags(0)
 
 	// asterisk ari message receiver
 	go recvEventFromAst()
