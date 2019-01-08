@@ -6,6 +6,7 @@ Connect to Asterisk's ari websocket and subscribe all events.
 When the events arrived to proxy, then it passed the event to the rabbirmq queue directly.
 
 # Usage
+<pre>
 -ari_account string
     asterisk ari account info. id:password (default "asterisk:asterisk")
 -ari_addr string
@@ -18,4 +19,4 @@ When the events arrived to proxy, then it passed the event to the rabbirmq queue
     rabbitmq service address. (default "amqp://guest:guest@localhost:5672")
 -rabbit_queue string
     rabbitmq queue name. (default "asterisk_ari")
-
+</pre>
